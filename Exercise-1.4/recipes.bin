@@ -1,6 +1,0 @@
-import pickle
-
-data = {
-    'recipes_list': [{'name': 'cake', 'cooking_time': 10, 'ingredients': ['flour','butter','sugar']},{'name': 'ramen', 'cooking_time': 5, 'ingredients': ['noodles','water','seasoning']}],
-    'all_ingredients': ['flour','butter','sugar','noodles','water','seasoning']
-}
