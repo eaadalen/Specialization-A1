@@ -34,20 +34,6 @@ filename = input("Enter a filename: ")
 recipes_list = []
 all_ingredients = []
 
-'''
-try:
-    with open(filename, "rb") as file:
-        data = pickle.load(file)
-        recipes_list = data['recipes_list']
-        all_ingredients = data['all_ingredients']
-except FileNotFoundError:
-    print("File not found")
-except:
-    print("Failed reading file")
-else:
-    file.close()
-'''
-
 n = input("How many recipes would you like to enter? ")
 
 for i in range(int(n)):
