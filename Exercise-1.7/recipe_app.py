@@ -23,17 +23,6 @@ class Recipe(Base):
     # Table Name: Define the name of the table in the database.
     __tablename__ = "final_recipes"
 
-    # Schema:
-    #|-----------------------------------------------------------------------------------|
-    #| Field        | Type         | Null     | Key         | Default   | Extra          |
-    #|--------------|--------------|----------|-------------|-----------|----------------|
-    #| id           | int          | NOT NULL | PRIMARY KEY | NULL      | AUTO_INCREMENT |
-    #| name         | varchar(50)  | NULLABLE |             | NULL      |                |
-    #| ingredients  | varchar(255) | NULLABLE |             | NULL      |                |
-    #| cooking_time | int          | NULLABLE |             | NULL      |                |
-    #| difficulty   | varchar(20)  | NULLABLE |             | NULL      |                |
-    #|-----------------------------------------------------------------------------------|
-
     # Columns: Define the structure of the table.
     id = Column(Integer, primary_key=True)
     name = Column(String(50))
@@ -460,17 +449,12 @@ def main_menu():
     while choice != "quit":
         
         # Display the main menu header and options.
-        print("  _____           _                                   ")
-        print(" |  __ \         (_)                /\                ")
-        print(" | |__) |___  ___ _ _ __   ___     /  \   _ __  _ __  ")
-        print(" |  _  // _ \/ __| | '_ \ / _ \   / /\ \ | '_ \| '_ \ ")
-        print(" | | \ \  __/ (__| | |_) |  __/  / ____ \| |_) | |_) |")
-        print(" |_|  \_\___|\___|_| .__/ \___| /_/    \_\ .__/| .__/ ")
-        print("                   | |                   | |   | |    ")
-        print("                   |_|                   |_|   |_|    ")
-        print("======================================================")
-        print("   What would you like to do? Pick a choice below!    ")
-        print("======================================================\n")
+        print()
+        print("      RECIPE APP")
+        print()
+        print("======================")
+        print("   Select an option    ")
+        print("======================\n")
         print("1. Create a new recipe")
         print("2. View all recipes")
         print("3. Search for a recipe by ingredient")
